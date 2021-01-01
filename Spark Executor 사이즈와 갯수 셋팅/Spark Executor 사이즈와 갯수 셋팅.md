@@ -2,7 +2,7 @@
 
 Data_Engineering_TIL(20201231)
 
-[학습내용]
+[참고자료]
 
 'Jaemun Jung'님 블로그글 "[Apache Spark] Executor 사이즈와 개수 정하기" 을 학습하고 정리한 노트입니다.
 
