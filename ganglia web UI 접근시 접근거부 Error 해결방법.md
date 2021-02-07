@@ -25,7 +25,7 @@ $ sudo cat /etc/httpd/logs/error_log
 [Wed May 07 10:50:42 2014] [error] [client 118.102.239.85] client denied by server configuration: /usr/share/ganglia
 ```
 
-[해결방법]
+### [해결방법]
 
 ```bash
 $ sudo vim /etc/httpd/conf.d/ganglia.conf
