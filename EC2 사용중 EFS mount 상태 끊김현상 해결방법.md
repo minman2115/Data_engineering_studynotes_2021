@@ -10,7 +10,7 @@ URL : https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-mounting.htm
 
 ### [문제상황]
 
-- EC2에 EFS를 mount하여 사용하는 중에 EC2와 EFS 간에 mount가 중단
+- EC2에 EFS를 mount하여 사용하는 중에 EC2와 EFS 간에 mount가 중단됨
 
 
 - EC2 서버의 해당 EFS 폴더 경로로 이동해서 ls 등 어떠한 명령어를 실행하였을때 명령어가 실행은 되지만 결과값이 return이 안되고 명령어가 pending 후 먹통이 되는현상이 발생함
