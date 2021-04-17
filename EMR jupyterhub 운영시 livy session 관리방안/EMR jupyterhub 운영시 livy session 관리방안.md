@@ -8,6 +8,4 @@ Data_Engineering_TIL(20210417)
 
 - 해결방안
 
-정기적으로 오래된 휴무중인 livy session을 kill 해줘야함.
-
-** 아래 URL을 참고할것
+정기적으로 오래된 휴무중인 livy session을 kill 해줘야함

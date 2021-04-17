@@ -10,5 +10,3 @@ Data_Engineering_TIL(20210417)
 - 해결방안
 
 Airflow 스케쥴링을 이용하여 EMR에 쌓여있는 HDFS 임시파일, jupyterhub log 등을 정기적으로 삭제
-
-** 아래 URL을 참고할것
