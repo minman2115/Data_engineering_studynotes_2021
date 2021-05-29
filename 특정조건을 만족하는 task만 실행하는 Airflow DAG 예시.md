@@ -19,9 +19,9 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.exceptions import AirflowSkipException
 import os
 from airflow.models import Variable
-MODULE_PATH=Variable.get('MODULE-PATH')
+my_module_path=Variable.get('my_module_path')
 import sys
-sys.path.append(MODULE_PATH)
+sys.path.append(my_module_path)
 from my_custom_lib import *
 from datetime import datetime, timedelta
 import time
