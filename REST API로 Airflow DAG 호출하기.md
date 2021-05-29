@@ -63,6 +63,8 @@ pprint(result.content.decode('utf-8'))
 
 ```python
 
+# 전체 DAG 스크립트중 일부만 발췌
+
 username=Variable.get("minsupark_username")
 password=Variable.get("minsupark_password")
 
