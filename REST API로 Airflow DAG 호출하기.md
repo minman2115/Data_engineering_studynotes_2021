@@ -58,3 +58,47 @@ result = requests.post(
 
 pprint(result.content.decode('utf-8'))
 ```
+
+- Airflow DAG 활용예시
+
+```python
+
+username=Variable.get("minsupark_username")
+password=Variable.get("minsupark_password")
+
+
+# my_airflow_task_checker 라는 DAG 내에 task가 실행하다가 fail이 나면 restapi로 이 DAG를 재실행하는 함수
+# DAG_NAME 라는 변수는 지금 이 스크립트를 돌리는 DAG이름임, 외부의 DAG를 트리거 하는것도 가능
+def call_external_dag(**kwargs):
+    # 실행시간 정보 조회
+    execution_date = kwargs['execution_date']
+    # DAG 정보 조회
+    dag_instance = kwargs['dag']
+    # 특정 TASK 정보 조회
+    operator_instance = dag_instance.get_task('my_airflow_task_checker')
+    # TASK 상태조회
+    task_status = TaskInstance(operator_instance,execution_date).current_state()
+    # my_airflow_task_checker TASK 상태가 fail이 나면 REST API를 이용해서 해당 DAG를 다시 RUNNING 시킴
+    if task_status == 'failed':
+        result = requests.post(
+            # 참고로 아래와 같이 단일 Airflow에서 실행할 경우 localhost 주소로 api를 날릴 수 있지만,
+            # 클러스터 형태의 airflow는 반드시 airflow master node의 ip로 호출해야 한다.
+            "http://localhost:8080/api/experimental/dags/"+DAG_NAME+"/dag_runs",
+            #"http://{Airflow_master_server_IP}:8080/api/experimental/dags/"+DAG_NAME+"/dag_runs",
+            data = json.dumps("{}"),
+            auth = (username,password)
+        )
+        pprint(result.content.decode('utf-8'))
+    else:
+        pprint(task_status)
+        
+retry_dag = PythonOperator(
+    task_id = 'retry_dag',
+    provide_context=True,
+    python_callable=call_external_dag,
+    trigger_rule = 'all_done',
+    dag=dag
+)
+
+my_airflow_task >> my_airflow_task_checker >> retry_dag
+```
