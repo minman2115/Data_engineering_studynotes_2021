@@ -50,8 +50,8 @@ Extra : {"key_file":"/home/minman/airflow/dags/my_emr_pemkey","no_host_key_check
 
 2) 'Password : ' 는 특별히 기입해야할 내용이 없다는 의미임
 
-3) 'my_emr_pemkey'라는 emr master node에 접속하기 위한 pem key를 /home/minman/airflow/dag/에 사전에 위치시켜야함
+3) 'my_emr_pemkey'라는 이름의 file은 emr master node에 접속하기 위한 pem key로 예를 들어서 '/home/minman/airflow/dag/' 경로에 사전에 위치시켜야 한다는 것임
 
-- 아래 URL 자료와 같이 SSHOperator를 이용하여 DAG 개발
+- Airflow SSHOperator 사용을 위해서 필요한 Connection 설정을 해줬으면 아래 URL 자료와 같이 SSHOperator를 이용하여 DAG 개발하고 Airflow에 적용하면 된다.
 
 https://github.com/minman2115/Data_engineering_studynotes_2021/blob/master/Airflow%20SSHOperator%20%EC%82%AC%EC%9A%A9%EC%98%88%EC%8B%9C/dag_example.zip
