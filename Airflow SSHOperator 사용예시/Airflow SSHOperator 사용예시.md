@@ -57,3 +57,7 @@ Extra : {"key_file":"/home/minman/airflow/dags/my_emr_pemkey","no_host_key_check
 - Airflow SSHOperator 사용을 위해서 필요한 Connection 설정을 해줬으면 아래 URL 자료와 같이 SSHOperator를 이용하여 DAG 개발하고 Airflow에 적용하면 된다.
 
 https://github.com/minman2115/Data_engineering_studynotes_2021/blob/master/Airflow%20SSHOperator%20%EC%82%AC%EC%9A%A9%EC%98%88%EC%8B%9C/dag_example.zip
+
+** add step을 활용해서 만든 DAG는 아래의 URL을 참고한다.
+
+https://github.com/minman2115/Data_engineering_studynotes_2021/blob/master/Airflow%20SSHOperator%20%EC%82%AC%EC%9A%A9%EC%98%88%EC%8B%9C/add_step_dag_example.zip
