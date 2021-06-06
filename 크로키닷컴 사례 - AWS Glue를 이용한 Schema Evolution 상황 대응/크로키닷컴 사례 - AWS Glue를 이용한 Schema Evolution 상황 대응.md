@@ -6,7 +6,7 @@ Data_Engineering_TIL(20210606)
 
 AWSKRUG '데이터 엔지니어가 실무에서 맞닥뜨리는 문제들' 크로키닷컴 강웅석 자료를 공부하고 정리한 내용입니다.
 
-URL : 
+URL : https://github.com/minman2115/Data_engineering_studynotes_2021/blob/master/AWS%20Glue%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Schema%20Evolution%20%EC%83%81%ED%99%A9%20%EB%8C%80%EC%9D%91%20%EC%82%AC%EB%A1%80/AWSKRUG%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EA%B0%80%20%EC%8B%A4%EB%AC%B4%EC%97%90%EC%84%9C%20%EB%A7%9E%EB%8B%A5%EB%9C%A8%EB%A6%AC%EB%8A%94%20%EB%AC%B8%EC%A0%9C%EB%93%A4.pdf
 
 [학습내용]
 
