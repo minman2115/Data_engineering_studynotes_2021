@@ -105,7 +105,7 @@ Docker 이미지를 확인하는 데 사용되는 특정 레지스트리를 신�
 
 아래 예시는 공용 리포지토리(your-public-repo)와 ECR 레지스트리(123456789123.dkr.ecr.us-east-1.amazonaws.com)를 모두 신뢰하도록 클러스터를 구성하는 configuration 예시임다. ECR을 사용하는 경우 이 endpoint을 특정 ECR endpoint로 바꾸면된다.  Docker Hub를 사용할 때는 이 리포지토리 이름을 실제 리포지토리 이름으로 바꾸면 된다.
 
-- container-executor.json(EMR configuration file)
+container-executor.json(EMR configuration file)
 
 
 ```json
@@ -195,7 +195,7 @@ spark job을 submit하려면 Docker 이름을 참조해야 한다. EMR configura
 
 `YARN_CONTAINER_RUNTIME_DOCKER_IMAGE={DOCKER_IMAGE_NAME}`
 
-YARN_CONTAINER_RUNTIME_DOCKER_CLIENT_CONFIG는 ECR 인증에 사용되는 자격 증명이 포함된 config.json(EMR configuration file) 에 명시를 해야한다.
+아까 위에서 설정한 YARN_CONTAINER_RUNTIME_DOCKER_CLIENT_CONFIG는 ECR 인증에 사용되는 자격 증명이 포함된 config.json도 명시를 해야한다.
 
 
 ```bash
