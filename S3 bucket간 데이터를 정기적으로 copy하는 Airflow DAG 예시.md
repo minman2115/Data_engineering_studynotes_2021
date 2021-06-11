@@ -200,4 +200,6 @@ def get_my_emr_cluster_id(cluster_name,**kwargs):
 
 2) airflow_sys_user_info : {"id":"minman","pwd" :"mypwd123@"}
 
-3) ENV : dev
+3) ENV : 'dev'
+
+4) my_module_path : '/home/myfolder/airflow/utils'
