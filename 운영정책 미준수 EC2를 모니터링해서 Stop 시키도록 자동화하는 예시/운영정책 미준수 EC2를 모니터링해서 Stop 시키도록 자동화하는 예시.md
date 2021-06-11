@@ -92,7 +92,7 @@ Extra : {“key_file”:”/home/minman/airflow/dags/my_emr_pemkey”,”no_host
 
 ============================================================================================
 
-2) 운영정책 미준수하는 EC2를 STOP logic : ec2_monitor_DAG.py
+2) 운영정책 미준수하는 EC2를 STOP logic : ec2_monitor.py
 
 아래의 URL의 자료를 참고할 것
 
