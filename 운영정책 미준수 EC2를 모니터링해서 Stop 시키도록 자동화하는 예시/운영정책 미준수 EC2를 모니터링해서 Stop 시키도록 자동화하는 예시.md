@@ -4,8 +4,9 @@ Data_Engineering_TIL(20210611)
 
 - 아키텍처
 
-
 Airflow DAG에서 10분마다 어떤 로직을 실행하는데 이 로직은 뭐냐면 운영정책 미준수하는 EC2를 STOP 시킴
+
+** EC2 운영정책 체크내용 : TAG naming rule 준수여부, 특정시간 동안의 자원사용량
 
 - 구현내용
 
