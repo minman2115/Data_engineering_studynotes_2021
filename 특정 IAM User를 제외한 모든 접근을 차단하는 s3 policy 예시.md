@@ -2,10 +2,7 @@
 
 pms-bucket-test 라는 버킷에 minsu.park이라는 IAM User를 제외한 모든 접근을 막고 싶다.
 
-- 방법
-
-minman-bucket s3 버킷에 아래와 같은 정책을 반영
-
+- 방법 1. minman-bucket s3 버킷에 아래와 같은 정책을 반영
 
 ```json
 {
@@ -29,10 +26,7 @@ minman-bucket s3 버킷에 아래와 같은 정책을 반영
 }
 ```
 
-방법 2. pms-bucket-test-2에 대한 접근권한 policy를 아래와 같이 생성하고, IAM User 들에 할당한다.
-
-- policy 예시
-
+- 방법 2. pms-bucket-test-2에 대한 접근권한 policy를 아래와 같이 생성하고, IAM User 들에 할당한다.
 
 ```json
 {
